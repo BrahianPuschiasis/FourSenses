@@ -1,0 +1,32 @@
+.historial-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .historial-table th,
+  .historial-table td {
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .historial-table th:nth-child(1),
+  .historial-table td:nth-child(1) {
+    max-width: 150px;
+  }
+  
+  .historial-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .historial-table td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .historial-table td a:hover {
+    text-decoration: underline;
+  }
+  

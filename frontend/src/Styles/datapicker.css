@@ -1,0 +1,32 @@
+/* Nuevos estilos */
+.calendar-container {
+    display: inline-block;
+  }
+  
+  /* Estilos para el contenedor principal del calendario */
+  .react-datepicker-wrapper {
+    position: relative;
+  }
+  
+  .react-datepicker {
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+  }
+  
+  .react-datepicker__navigation--previous,
+  .react-datepicker__navigation--next {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .react-datepicker__navigation--previous:hover,
+  .react-datepicker__navigation--next:hover {
+    color: #0056b3;
+  }
+  

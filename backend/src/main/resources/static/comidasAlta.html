@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Comidas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/post_comidas.js"></script>
+</head>
+<body>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="comidasList.html">Listado Comidas</a>
+    </li>
+  </ul>
+  <div class="row">
+    <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+      <h3>Agregar Comida</h3>
+      <form id="add_new_comida">
+        <div class="form-group">
+          <label class="control-label" for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre"
+                 placeholder="Ingrese el nombre" name="nombre" required></input>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="descripcion">Descripcion:</label>
+          <input type="text" class="form-control" id="descripcion"
+                 placeholder="Ingrese la descripcion" name="descripcion" required></input>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="categoria">Categoria:</label>
+          <select class="form-control" id="categoria" required>
+            <option value="Desayunos y Brunch">Desayunos y Brunch</option>
+            <option value="Cenas">Cenas</option>
+            <option value="Postres">Postres</option>
+            <option value="Buffets">Buffets</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label class="control-label" for="imagenes">Imagenes:</label>
+          <input type="text" class="form-control" id="imagenes"
+                 placeholder="Ingrese la/s imagen/es" name="imagenes" required></input>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-danger" id="btn-add-new-comida">Guardar</button>
+      </form>
+      <div id="response" style="display:none; margin-top:10px">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
